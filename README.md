@@ -41,13 +41,13 @@ Para permitir conexão via SSH (porta 22):
 
 az vm open-port --port 22 --resource-group MeuGrupoRecursos --name MinhaVM
 
-## 4️⃣. Conectar-se à VM
+### 4️⃣. Conectar-se à VM
 Após a criação, a Azure fornece o IP público da VM.
 Use o comando abaixo para acessar:
 
 ssh azureuser@IP_Publico_Da_VM
 
-### Boas Práticas de Segurança
+## Boas Práticas de Segurança
 
 Preferir autenticação com chaves SSH em vez de senha.
 Usar NSG (Network Security Group) para controlar o tráfego de rede.
