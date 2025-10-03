@@ -21,12 +21,12 @@ Este repositório demonstra como criar e gerenciar **Máquinas Virtuais (VMs)** 
 
 ## 🚀 Passo a Passo para Criação de uma VM na Azure  
 
-### 1. Criar um Grupo de Recursos  
+### 1️⃣. Criar um Grupo de Recursos  
 Um **Resource Group** é um container lógico para organizar recursos da Azure.  
 
 az group create --name MeuGrupoRecursos --location eastus
 
-### 2. Criar a Máquina Virtual
+### 2️⃣. Criar a Máquina Virtual
 Aqui será criada uma VM Ubuntu LTS com usuário azureuser e chave SSH gerada automaticamente.
 
 az vm create \
@@ -36,12 +36,12 @@ az vm create \
   --admin-username azureuser \
   --generate-ssh-keys
 
-### 3. Abrir Porta para Acesso Remoto
+### 3️⃣. Abrir Porta para Acesso Remoto
 Para permitir conexão via SSH (porta 22):
 
 az vm open-port --port 22 --resource-group MeuGrupoRecursos --name MinhaVM
 
-## 4️. Conectar-se à VM
+## 4️⃣. Conectar-se à VM
 Após a criação, a Azure fornece o IP público da VM.
 Use o comando abaixo para acessar:
 
